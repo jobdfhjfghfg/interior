@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이젠 인테리어</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- 네비게이션 시작    사이트 네비게이션바 첫번째꺼 가져옴, form은 버림-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand logo-font" href="index.html"><img src="./images/logo.png" alt="로고"> 이젠 인테리어</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menubar" aria-controls="menubar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menubar">
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile.html">프로필</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              인테리어
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="private-interior.html">개인공간</a></li>
+              <li><a class="dropdown-item" href="business-interior.html">비즈니스 공간</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-disabled="true" href="contact.html">연락처</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- 네비게이션 끝 -->
+
+
+  <!-- 헤더 영역 시작   캐라셀 가져와서 적용함-->
+  <div id="headerCarousel" class="mt -5 carousel slide carousel-fade">
+    <!-- 사진이 다소 짤려서 mt-5주고 fade줘서 부드럽게 -->
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="./images/header1.jpg" class="d-block w-100" alt="헤더1">
+        <!-- 캐러셀 설명문쪽 class가져옴 -->
+        <div class="carousel-caption text-md-start">
+          <h1 class="display-4 mb-0">이젠 인테리어</h1>
+          <!-- sm사이즈에선 안보이게 해주는것 -->
+          <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, quas.</p>
+        </div>
+      </div>
+
+      <div class="mt -5 carousel-item">
+        <img src="./images/header2.jpg" class="d-block w-100" alt="헤더2">
+        <div class="carousel-caption text-md-start">
+          <h1 class="display-4 mb-0">이젠 인테리어</h1>
+          <!-- sm사이즈에선 안보이게 해주는것 -->
+          <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, quas.</p>
+        </div>
+      </div>
+
+      <div class="mt -5 carousel-item">
+        <img src="./images/header3.jpg" class="d-block w-100" alt="헤더3">
+        <div class="carousel-caption text-md-start">
+          <h1 class="display-4 mb-0">이젠 인테리어</h1>
+          <!-- sm사이즈에선 안보이게 해주는것 -->
+          <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, quas.</p>
+        </div>
+      </div>
+
+      <div class="mt -5 carousel-item">
+        <img src="./images/header4.jpg" class="d-block w-100" alt="헤더4">
+        <div class="carousel-caption text-md-start">
+          <h1 class="display-4 mb-0">이젠 인테리어</h1>
+          <!-- sm사이즈에선 안보이게 해주는것 -->
+          <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, quas.</p>
+        </div>
+      </div>
+
+      <div class="mt -5 carousel-item">
+        <img src="./images/header5.jpg" class="d-block w-100" alt="헤더5">
+        <div class="carousel-caption text-md-start">
+          <h1 class="display-4 mb-0">이젠 인테리어</h1>
+          <!-- sm사이즈에선 안보이게 해주는것 -->
+          <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, quas.</p>
+        </div>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#headerCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#headerCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- 헤더 영역 끝 -->
+
+
+    <!-- 메인섹션 시작 -->
+    <main class="container my-5">
+        <div class="row">
+            <!-- 프로필 바 섹션        프로필바와 프라이빗 인테리어 섹션의 위치를 md사이즈와 큰 사이즈  서로 위치를 다르게 해주고 싶을때 플렉스-순서  참고해서 order-md-1적용,  md에선 private 먼저 나오게하고 큰 화면은 프로필 먼저 나오게 해준것 -->
+            <section class="col-md-5 col-lg-3 order-2 order-md-1">
+                <div class="bg-dark text-white text-center my-3 p-4 rounded">
+                    <img src="./images/main-profile.jpg" alt="메인프로필" class="rounded-circle img-fluid p-4">
+                    <h2 class="fs-4 py-3">이젠 Kim</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolores perferendis asperiores rerum, modi sequi nesciunt ut fuga atque sed, sapiente beatae, reprehenderit non facere?</p>
+                    <div class="d-flex justify-content-evenly fs-4 py-3 ">
+                        <a href="https://www.youtube.com/" aria-label = "유튜브" target="_blank" class="link-danger"><i class="bi bi-youtube fs-4 red"></i></a>
+                        <a href="https://www.facebook.com/" aria-label = "페이스북" target="_blank"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="https://www.instagram.com/" aria-label = "인스타그램" target="_blank" class="link-warning"><i class="bi bi-instagram fs-4 yellow"></i></a>
+                    </div>
+                </div>
+                <!-- 프로필바 섹션 끝 -->
+
+            <!-- 자격사항    카드와 목록그룹 합쳐준것-->
+            <div class="card bg-dark text-white text-center">
+                <div class="card-header">
+                    <h3 class="">자격사항</h3>
+                </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">자격사항 1</li>
+                <li class="list-group-item">자격사항 2</li>
+                <li class="list-group-item">자격사항 3</li>
+              </ul>
+            </div>
+            <!-- 자격사항 끝 -->
+
+            <!-- 경력사항 -->
+            <div class="card bg-dark text-center text-white mt-3">
+                <div class="card-header">
+                  <h3 class="fs-5 m-1">경력사항</h3>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <p class="text-muted m-1">2000-2022</p>
+                    <p class="fw-bold m-1">Lorem ipsum dolor sit amet.</p>
+                  </li>
+                  <li class="list-group-item">
+                    <p class="text-muted m-1">2000-2022</p>
+                    <p class="fw-bold m-1">Lorem ipsum dolor sit amet.</p>
+                  </li>
+                  <li class="list-group-item">
+                    <p class="text-muted m-1">2000-2022</p>
+                    <p class="fw-bold m-1">Lorem ipsum dolor sit amet.</p>
+                  </li>
+                  <li class="list-group-item">
+                    <p class="text-muted m-1">2000-2022</p>
+                    <p class="fw-bold m-1">Lorem ipsum dolor sit amet.</p>
+                  </li>
+                </ul>
+              </div>
+            <!-- 경력사항 끝 -->
+            </section>
+            
+
+            
+
+
+            <!-- 프라이빗 인테리어 섹션 시작 -->
+            <section class="col-md-7 col-lg-9 order-1 order-md-2">
+                <div class="row">
+                    
+                    <!-- 1 -->
+                    <div class="col-lg-6 py-3">
+                        <div class="card">
+                            <div class="overflow-hidden">
+                                <img src="./images/gallery1.jpg" class="card-img-top" alt="갤러리1">
+                            </div>
+                            <div class="card-body">
+                              <h4 class="card-title">My 포트폴리오</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-outline-dark">스토리 보기</a>
+                            </div>
+                          </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="col-lg-6 py-3">
+                        <div class="card">
+                            <div class="overflow-hidden">
+                                <img src="./images/gallery2.jpg" class="card-img-top" alt="갤러리2">
+                            </div>
+                            <div class="card-body">
+                              <h4 class="card-title">My 포트폴리오</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-outline-dark">스토리 보기</a>
+                            </div>
+                          </div>
+                    </div>
+
+
+                    <!-- 모달파트 -->
+                    <div class="col-12 py-3">
+                        <div class="banner card text-center p-3">
+                            <div class="card-body">
+                                <!-- 버튼 -->
+                                <button type="button" class="btn btn-outline-light   rounded-pill" data-bs-toggle="modal" data-bs-target="#portfolio-Modal">
+                                    <i class="bi bi-file-earmark-image"></i> 자연으로 열린 공간
+                                </button>
+
+
+
+                                <div class="modal fade" tabindex="-1" id = "portfolio-Modal" data-bs-backdrop = "static" data-bs-keyboard = "false" aria-labelledby="portfolioModalLabel", aria-hidden="true">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h4 class="modal-title fs-5" id = "portfolioModalLabel">자연으로 열린 공간</h4>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h2>Lorem ipsum dolor sit amet.</h2>
+                                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab maiores laboriosam dicta laudantium sit! Asperiores?</p>
+                                          
+                                          <!-- fluid안주면 이미지 넘쳐버림 -->
+                                            <img src="./images/modal-img.jpg" alt="모달" class="img-fluid">
+                                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis tempora consequuntur voluptas unde ipsa repudiandae sit labore, iste eligendi! Nihil.</p>
+                                        </div>
+
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">닫기</button>
+                                          <button type="button" class="btn btn-outline-danger">뉴스 기사 보기</button>
+                                        </div>
+
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- 3 -->
+                    <div class="col-lg-6 py-3">
+                        <div class="card">
+                            <div class="overflow-hidden">
+                                <img src="./images/gallery3.jpg" class="card-img-top" alt="갤러리3">
+                            </div>
+                            <div class="card-body">
+                              <h4 class="card-title">My 포트폴리오</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-outline-dark">스토리 보기</a>
+                            </div>
+                          </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="col-lg-6 py-3">
+                        <div class="card">
+                            <div class="overflow-hidden">
+                                <img src="./images/gallery4.jpg" class="card-img-top" alt="갤러리4">
+                            </div>
+                            <div class="card-body">
+                              <h4 class="card-title">My 포트폴리오</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-outline-dark">스토리 보기</a>
+                            </div>
+                          </div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="col-lg-6 py-3">
+                        <div class="card">
+                            <div class="overflow-hidden">
+                                <img src="./images/gallery5.jpg" class="card-img-top" alt="갤러리5">
+                            </div>
+                            <div class="card-body">
+                              <h4 class="card-title">My 포트폴리오</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-outline-dark">스토리 보기</a>
+                            </div>
+                          </div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="col-lg-6 py-3">
+                        <div class="card">
+                            <div class="overflow-hidden">
+                                <img src="./images/gallery6.jpg" class="card-img-top" alt="갤러리6">
+                            </div>
+                            <div class="card-body">
+                              <h4 class="card-title">My 포트폴리오</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-outline-dark">스토리 보기</a>
+                            </div>
+                          </div>
+                    </div>
+                            </div>
+                          </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- 프라이빗 인테리어 섹션 끝 -->
+
+            
+        </div>
+    </main>
+    <!-- 메인섹션 끝 -->
+
+
+    <!-- 풋터 시작 -->
+    <footer class="bg-dark text-center text-white py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <a href="./index.html" class="logo-font link-light text-decoration text-decoration-none fs-5"><img src="./images/logo.png" alt="로고" class="my-3">이젠 인테리어</a>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, ea quo. Enim sint rerum reprehenderit architecto nobis neque id nihil?</p>
+          </div>
+  
+  
+          <div class="col-md-4">
+            <h4 class="fw-bold my-3">About Us</h4>
+            <ul class="list-unstyled"> 
+              <li><a href="profile.html" class="text-decoration-none link-light">프로필</a></li>
+              <li><a href="private-interior.html" class="text-decoration-none link-light">프라이빗 비즈니스</a></li>
+              <li><a href="business-interior.html" class="text-decoration-none link-light">비즈니스 인테리어</a></li>
+              <li><a href="contact.html" class="text-decoration-none link-light">연락처</a></li>
+            </ul>
+          </div>
+
+  
+          <div class="col-md-4">
+            <h4 class="fw-bold my-3">소셜 미디어</h4>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-decoration-none link-light">유튜브</a></li>
+              <li><a href="#" class="text-decoration-none link-light">블로그</a></li>
+              <li><a href="#" class="text-decoration-none link-light">인스타그램</a></li>
+              <li><a href="#" class="text-decoration-none link-light">페이스북</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <p class="my-3"><i class="bi bi-c-circle"></i> ALL RIGHT RESERVED BY <span class="logo-font text-info">이젠 인테리어</span></p>
+        
+        
+      </div>
+    </footer>
+    <!-- 풋터 끝 -->
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

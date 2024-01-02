@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이젠 인테리어</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- 네비게이션 시작    사이트 네비게이션바 첫번째꺼 가져옴, form은 버림-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand logo-font" href="index.html"><img src="./images/logo.png" alt="로고"> 이젠 인테리어</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menubar" aria-controls="menubar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menubar">
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="profile.html">프로필</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              인테리어
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="private-interior.html">개인공간</a></li>
+              <li><a class="dropdown-item" href="business-interior.html">비즈니스 공간</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-disabled="true">연락처</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- 네비게이션 끝 -->
+
+
+  <!-- 헤더 영역 시작   캐라셀 가져와서 적용함-->
+  <div id="headerCarousel" class="mt -5 carousel slide carousel-fade">
+    <!-- 사진이 다소 짤려서 mt-5주고 fade줘서 부드럽게 -->
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="./images/header1.jpg" class="d-block w-100" alt="헤더1">
+        <!-- 캐러셀 설명문쪽 class가져옴 -->
+        <div class="carousel-caption text-md-start">
+          <h1 class="display-4 mb-0">이젠 인테리어</h1>
+          <!-- sm사이즈에선 안보이게 해주는것 -->
+          <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, quas.</p>
+        </div>
+      </div>
+
+      <div class="mt -5 carousel-item">
+        <img src="./images/header2.jpg" class="d-block w-100" alt="헤더2">
+        <div class="carousel-caption text-md-start">
+          <h1 class="display-4 mb-0">이젠 인테리어</h1>
+          <!-- sm사이즈에선 안보이게 해주는것 -->
+          <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, quas.</p>
+        </div>
+      </div>
+
+      <div class="mt -5 carousel-item">
+        <img src="./images/header3.jpg" class="d-block w-100" alt="헤더3">
+        <div class="carousel-caption text-md-start">
+          <h1 class="display-4 mb-0">이젠 인테리어</h1>
+          <!-- sm사이즈에선 안보이게 해주는것 -->
+          <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, quas.</p>
+        </div>
+      </div>
+
+      <div class="mt -5 carousel-item">
+        <img src="./images/header4.jpg" class="d-block w-100" alt="헤더4">
+        <div class="carousel-caption text-md-start">
+          <h1 class="display-4 mb-0">이젠 인테리어</h1>
+          <!-- sm사이즈에선 안보이게 해주는것 -->
+          <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, quas.</p>
+        </div>
+      </div>
+
+      <div class="mt -5 carousel-item">
+        <img src="./images/header5.jpg" class="d-block w-100" alt="헤더5">
+        <div class="carousel-caption text-md-start">
+          <h1 class="display-4 mb-0">이젠 인테리어</h1>
+          <!-- sm사이즈에선 안보이게 해주는것 -->
+          <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, quas.</p>
+        </div>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#headerCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#headerCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- 헤더 영역 끝 -->
+
+
+    <!-- 메인섹션 시작 -->
+    <main class="container my-5">
+        <div class="row">
+            <!-- 프로필 바 섹션 -->
+            <section class="col-md-5 col-lg-3">
+                <div class="bg-dark text-white text-center my-3 p-4 rounded">
+                    <img src="./images/main-profile.jpg" alt="메인프로필" class="rounded-circle img-fluid p-4">
+                    <h2 class="fs-4 py-3">이젠 Kim</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolores perferendis asperiores rerum, modi sequi nesciunt ut fuga atque sed, sapiente beatae, reprehenderit non facere?</p>
+                    <div class="d-flex justify-content-evenly fs-4 py-3 ">
+                        <a href="https://www.youtube.com/" aria-label = "유튜브" target="_blank" class="link-danger"><i class="bi bi-youtube fs-4 red"></i></a>
+                        <a href="https://www.facebook.com/" aria-label = "페이스북" target="_blank"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="https://www.instagram.com/" aria-label = "인스타그램" target="_blank" class="link-warning"><i class="bi bi-instagram fs-4 yellow"></i></a>
+                    </div>
+                </div>
+
+            <!-- 자격사항    카드와 목록그룹 합쳐준것-->
+            <div class="card bg-dark text-white text-center">
+                <div class="card-header">
+                    <h3 class="">자격사항</h3>
+                </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">자격사항 1</li>
+                <li class="list-group-item">자격사항 2</li>
+                <li class="list-group-item">자격사항 3</li>
+              </ul>
+            </div>
+            <!-- 자격사항 끝 -->
+
+            <!-- 경력사항 -->
+            <div class="card bg-dark text-center text-white mt-3">
+                <div class="card-header">
+                  <h3 class="fs-5 m-1">경력사항</h3>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <p class="text-muted m-1">2000-2022</p>
+                    <p class="fw-bold m-1">Lorem ipsum dolor sit amet.</p>
+                  </li>
+                  <li class="list-group-item">
+                    <p class="text-muted m-1">2000-2022</p>
+                    <p class="fw-bold m-1">Lorem ipsum dolor sit amet.</p>
+                  </li>
+                  <li class="list-group-item">
+                    <p class="text-muted m-1">2000-2022</p>
+                    <p class="fw-bold m-1">Lorem ipsum dolor sit amet.</p>
+                  </li>
+                  <li class="list-group-item">
+                    <p class="text-muted m-1">2000-2022</p>
+                    <p class="fw-bold m-1">Lorem ipsum dolor sit amet.</p>
+                  </li>
+                </ul>
+              </div>
+            <!-- 경력사항 끝 -->
+            </section>
+            <!-- 프로필바 섹션 끝 -->
+
+            
+
+
+            <!-- 포트폴리오 섹션 시작 -->
+            <section class="col-md-7 col-lg-9">
+                <div class="row">
+
+                    <div class="text-center pb-5">
+                        <h2 class="fs-1 fw-bold py-4">About 이젠 인테리어</h2>
+                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque in adipisci ducimus aliquid fugit blanditiis unde, eius eum laborum voluptatum dolorum animi voluptate perferendis? Animi facilis facere aliquam itaque nihil!</p>
+                    </div>
+                    
+
+                    <!-- 프로필))  탭   네비게이션&탭 -> javaScript 비헤이비어 2번째꺼 가져옴    아이디들은 수정해주는게 좋음    link-dark 링크 검정색 변경-->
+                    <div class="nav nav-tabs" role="tablist">
+                        <button class="nav-link active link-dark" id="aboutme-tab" data-bs-toggle="tab" data-bs-target="#aboutme" type="button" role="tab" aria-controls="aboutme" aria-selected="true">이젠 소개</button>
+                        <button class="nav-link link-dark" id="certificate-tab" data-bs-toggle="tab" data-bs-target="#certificate" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">자격사항</button>
+                        <button class="nav-link link-dark" id="experiences-tab" data-bs-toggle="tab" data-bs-target="#experiences" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">경력사항</button>
+                      </div>
+                        
+                      
+                      <div class="tab-content">
+                        <div class="tab-pane fade show active" id="aboutme" role="tabpanel" aria-labelledby="aboutme-tab" tabindex="0">
+                            <h3 class="mt-5">이젠 Kim</h3>
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, sequi.</p>
+                            <img src="./images/profile-tab1.jpg" alt="메인프로필" class="img-fluid">
+                            <h4 class="mt-5">Lorem ipsum dolor</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, aliquid.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, provident alias corrupti accusamus aliquid necessitatibus debitis illum nisi enim voluptatum.</p>
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/K18dXQF7Fos?si=k8u1hpZ_0HWcech3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, voluptas.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est impedit ab voluptate unde earum voluptatum nisi deleniti ipsum fugit rerum!</p>
+                        </div>
+                        <!-- 프로필 끝 -->
+<!-- ------------------------------------------------------------------------------- -->
+                        <!-- 1  자격사항 시작 -->
+                        <div class="tab-pane fade" id="certificate" role="tabpanel" aria-labelledby="certificate-tab" tabindex="0">
+                            <div class="m-5">
+                                <div class="d-flex align-items-center py-3">
+                                    <img src="./images/certificate1.jpg" alt="자격사항1" class="rounded-5">
+                                    <div class="ms-3">
+                                        <h3 class="fw-bold">어워드 1</h3>
+                                        <p class="text-muted">Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima libero recusandae nesciunt dolore consequatur. Delectus doloribus cum quo quis eaque ratione dolore eum eius corrupti architecto, cumque maxime saepe nam.
+                                </p>
+                            </div>
+
+                            <!-- 2 -->
+                            <div class="m-5">
+                                <div class="d-flex align-items-center py-3">
+                                    <img src="./images/certificate2.jpg" alt="자격사항2" class="rounded-5">
+                                    <div class="ms-3">
+                                        <h3 class="fw-bold">어워드 2</h3>
+                                        <p class="text-muted">Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima libero recusandae nesciunt dolore consequatur. Delectus doloribus cum quo quis eaque ratione dolore eum eius corrupti architecto, cumque maxime saepe nam.
+                                </p>
+                            </div>
+
+                            <!-- 3 -->
+                            <div class="m-5">
+                                <div class="d-flex align-items-center py-3">
+                                    <img src="./images/certificate3.jpg" alt="자격사항3" class="rounded-5">
+                                    <div class="ms-3">
+                                        <h3 class="fw-bold">자격증 1</h3>
+                                        <p class="text-muted">Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima libero recusandae nesciunt dolore consequatur. Delectus doloribus cum quo quis eaque ratione dolore eum eius corrupti architecto, cumque maxime saepe nam.
+                                </p>
+                            </div>
+
+                            <!-- 4 -->
+                            <div class="m-5">
+                                <div class="d-flex align-items-center py-3">
+                                    <img src="./images/certificate4.jpg" alt="자격사항4" class="rounded-5">
+                                    <div class="ms-3">
+                                        <h3 class="fw-bold">자격증 2</h3>
+                                        <p class="text-muted">Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima libero recusandae nesciunt dolore consequatur. Delectus doloribus cum quo quis eaque ratione dolore eum eius corrupti architecto, cumque maxime saepe nam.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 자격사항 끝 -->
+
+                        <!-- 경력사항 시작 -->
+                        <div class="tab-pane fade" id="experiences" role="tabpanel" aria-labelledby="experiences-tab" tabindex="0">
+                            <div class="m-5 border-bottom">
+                                <h3>이젠 인테리어</h3>
+                                <p class="text-muted">2010 - 2022</p>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus eveniet repellat quod impedit mollitia fuga fugiat nesciunt hic non esse!</p>
+                            </div>
+
+                            <div class="m-5 border-bottom">
+                                <h3>인테리어 X</h3>
+                                <p class="text-muted">2010 - 2022</p>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus eveniet repellat quod impedit mollitia fuga fugiat nesciunt hic non esse!</p>
+                            </div>
+
+                            <div class="m-5 border-bottom">
+                                <h3>인테리어 A</h3>
+                                <p class="text-muted">2010 - 2022</p>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus eveniet repellat quod impedit mollitia fuga fugiat nesciunt hic non esse!</p>
+                            </div>
+                            
+                        </div>
+                        <!-- 경력사항 끝 -->
+                      </div>
+                    
+                </div>
+            </section>
+            <!-- 포트폴리오 섹션 끝 -->
+        </div>
+    </main>
+    <!-- 메인섹션 끝 -->
+
+
+    <!-- 풋터 시작 -->
+    <footer class="bg-dark text-center text-white py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <a href="./index.html" class="logo-font link-light text-decoration text-decoration-none fs-5"><img src="./images/logo.png" alt="로고" class="my-3">이젠 인테리어</a>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, ea quo. Enim sint rerum reprehenderit architecto nobis neque id nihil?</p>
+          </div>
+  
+  
+          <div class="col-md-4">
+            <h4 class="fw-bold my-3">About Us</h4>
+            <ul class="list-unstyled"> 
+              <li><a href="profile.html" class="text-decoration-none link-light">프로필</a></li>
+              <li><a href="private-interior.html" class="text-decoration-none link-light">프라이빗 비즈니스</a></li>
+              <li><a href="business-interior.html" class="text-decoration-none link-light">비즈니스 인테리어</a></li>
+              <li><a href="contact.html" class="text-decoration-none link-light">연락처</a></li>
+            </ul>
+          </div>
+
+  
+          <div class="col-md-4">
+            <h4 class="fw-bold my-3">소셜 미디어</h4>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-decoration-none link-light">유튜브</a></li>
+              <li><a href="#" class="text-decoration-none link-light">블로그</a></li>
+              <li><a href="#" class="text-decoration-none link-light">인스타그램</a></li>
+              <li><a href="#" class="text-decoration-none link-light">페이스북</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <p class="my-3"><i class="bi bi-c-circle"></i> ALL RIGHT RESERVED BY <span class="logo-font text-info">이젠 인테리어</span></p>
+        
+        
+      </div>
+    </footer>
+    <!-- 풋터 끝 -->
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
